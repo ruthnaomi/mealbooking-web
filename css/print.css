@@ -1,0 +1,26 @@
+@media print {
+    #dontPrintMe, #dontPrintMe * {
+        visibility: hidden;
+        display: none;
+    }
+    #section-to-print, #section-to-print * {
+        visibility: visible;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border: none;
+        color: #000;
+    }
+    #section-to-print {
+        position: absolute;
+        left: 0;
+        right: 0!important;
+        top: 0;
+    }
+    #print-button, #print-button * {
+        display: none;
+    }
+    #display-title * {
+        visibility: visible;
+        display: block;
+    }
+}
